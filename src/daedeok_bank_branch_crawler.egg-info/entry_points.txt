@@ -1,0 +1,2 @@
+[console_scripts]
+branch-crawler = daedeok_branch_crawler.cli:main

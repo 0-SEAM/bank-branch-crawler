@@ -1,0 +1,30 @@
+[project]
+name = "daedeok-bank-branch-crawler"
+version = "0.1.0"
+description = "Collect and normalize bank branches in Daejeon for 0:SEAM static assets."
+requires-python = ">=3.9"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "requests>=2.32,<3",
+  "urllib3<2; python_version < '3.10'",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+
+[project.scripts]
+branch-crawler = "daedeok_branch_crawler.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

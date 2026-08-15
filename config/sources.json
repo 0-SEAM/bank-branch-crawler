@@ -1,0 +1,25 @@
+[
+  {
+    "bank_id": "hana",
+    "bank_name": "하나은행",
+    "adapter": "hana_json",
+    "url": "https://openhanafn.ttmap.co.kr/iframe/list_json.jsp",
+    "city": "대전",
+    "enabled": true,
+    "bounds": {
+      "x1": 127250000,
+      "x2": 127550000,
+      "y1": 36250000,
+      "y2": 36550000
+    }
+  },
+  {
+    "bank_id": "kb",
+    "bank_name": "KB국민은행",
+    "adapter": "kb_json",
+    "url": "https://omoney.kbstar.com/quics?page=C016505",
+    "city": "대전",
+    "enabled": true,
+    "search": "대전"
+  }
+]

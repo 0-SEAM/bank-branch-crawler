@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: daedeok-bank-branch-crawler
+Version: 0.1.0
+Summary: Collect and normalize bank branches in Daejeon for 0:SEAM static assets.
+Requires-Python: >=3.9
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: requests<3,>=2.32
+Requires-Dist: urllib3<2; python_version < "3.10"
+Provides-Extra: test
+Requires-Dist: pytest<9,>=8.0; extra == "test"
+Dynamic: requires-python
